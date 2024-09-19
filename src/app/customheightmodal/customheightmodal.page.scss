@@ -1,0 +1,63 @@
+.block {
+  width: 100%;
+  height: 420px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+//   padding: 16px; /* Optional: add some padding */
+}
+
+ion-modal {
+  --height: auto;
+  border:  1px;
+}
+
+.shiplist {
+  height: 35px;
+  width: 100%;
+  border:  1px;
+}
+
+.shipadd {
+  font-size: 24px;
+  margin-top: -6px;
+  font-weight: bold;
+}
+.rowcl{
+    margin-top: -30px;
+}
+.mainlist{
+    width: 100%;
+    // height: 80px;
+    border:  1px;
+}
+.countrylist{
+    width: 95%;
+    margin-top: -15px;
+}
+.iconlist{
+    height: 40px;
+    width: 40px;
+    border:  1px;
+    float: right;
+    border-radius: 50px;
+    margin-top: -55px;
+    margin-right: 20px;
+    background-color: rgba(0, 0, 0, 0.164);
+}
+.icon{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.addresslist{
+    width: 95%;
+    margin-top: -15px;
+}
+.btn{
+    align-items: flex-end;
+  justify-content: flex-end;
+}

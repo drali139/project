@@ -1,0 +1,26 @@
+
+
+<ion-content [fullscreen]="true">
+  <ion-grid class="main">
+    <ion-list class="a">
+      <img class="imga" src="{{figmap1arry.img1}}" alt="">
+    </ion-list>
+    <ion-list class="b">
+      <ion-label class="b1">{{figmap1arry1.text1}} </ion-label>
+    </ion-list>
+    <ion-list class="c">
+      <ion-label class="ion-text-center c1">{{figmap1arry1.text2}} <br> <span>{{figmap1arry1.text3}} </span></ion-label>
+    </ion-list>
+<!-- <ion-list class="d"> -->
+  <ion-button [ngClass]="buttonClass" (click)="toggleButtonClass()" class="d">{{figmap1arry2.text4}} </ion-button>
+<!-- </ion-list> -->
+<ion-list class="e">
+<ion-label class="ee">{{figmap1arry3.text5}} </ion-label>
+  <ion-list class="e1" (click)="next()">
+    <ion-icon class="e2" color="light" name="{{figmap1arry3.icon1}}"></ion-icon>
+  </ion-list>
+</ion-list>
+<!-- <ion-list class="f"></ion-list> -->
+
+  </ion-grid>
+</ion-content>

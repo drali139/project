@@ -1,0 +1,18 @@
+.custom-alert-message {
+    --background: green; /* Your desired background color */
+  
+    ::ng-deep .alert-message {
+      color: white; /* Text color for the message */
+    }
+  
+    ::ng-deep .alert-title {
+      color: red; /* Text color for the header */
+    }
+  
+    ::ng-deep .alert-sub-title {
+      color: blue; /* Text color for the subheader */
+    }
+  }
+  
+
+  

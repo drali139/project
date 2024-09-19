@@ -1,0 +1,58 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet">
+<!-- content starts here -->
+
+<ion-content [fullscreen]="true">
+  <ion-grid class="main">
+    <ion-list class="a">
+      <p class="ap">{{settingarry.text1}} <br><span class="ap1">{{settingarry.text2}}</span></p>
+    </ion-list>
+    <ion-card class="b">
+      <div *ngIf="imageUrl">
+      <img [src]="imageUrl" alt="Selected Image" style="width: 140px; height: 140px; border-radius: 140px; "/>
+          </div>
+      <!-- <img class="imgb" src="{{settingarry1.img1}}" alt=""> -->
+    </ion-card>
+    <ion-list class="c"><ion-icon class="ci" color="light" name="{{settingarry1.icon1}}" (click)="presentActionSheet()"></ion-icon></ion-list>
+
+<ion-list class="d"><ion-input class="din" type="text" placeholder="Romina"></ion-input></ion-list>
+<ion-list class="e"><ion-input class="din" type="text" placeholder="gmail&#64;example.com"></ion-input></ion-list>
+<ion-list class="f"><ion-input class="din" type="password" placeholder="************"></ion-input></ion-list>
+
+<ion-button class="g">{{settingarry2.text3}} </ion-button>
+ 
+
+
+
+  </ion-grid>
+</ion-content>
+
+
+<!-- footer -->
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="home-outline" size="large" color="primary" (click)="home()"></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="heart-outline" size="large" color="primary" ></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="document-text-outline" size="large" color="primary" (click)="figmap7()"></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="bag-handle-outline" size="large" color="primary" (click)="cart()"></ion-icon>
+        <ion-badge shape="round" class="ion-badge">{{figmasettingarr.cart}} </ion-badge>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="person-outline" size="large" color="dark" ></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

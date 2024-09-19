@@ -1,0 +1,149 @@
+.a{
+    height: 100%;
+    width: 100%;
+}
+.a1{
+    height: 650px;
+    width: 100%;
+    border:  1px;
+    background: linear-gradient(to bottom, rgba(144, 238, 144, 0.767)50%, rgba(255, 255, 0, 0.568))50%;
+    transform: skew(0deg, -10deg) translateY(-120px);
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 60px;
+
+}
+.x{
+    background-color: transparent;
+    transform: skew(0deg, 10deg) translateY(120px);
+
+}
+.b{
+    height: 80px;
+    width: 80px;
+    border: solid 1px;
+    border-radius: 100px;
+    background: transparent;
+}
+.bb{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.b1{
+    height: 80px;
+    width: 80px;
+    border: solid 1px;
+    border-radius: 100px;
+    background-color: black;
+}
+.c{
+    font-size: 32px;
+    font-weight: bold;
+}
+.c1{
+    height: 45px;
+    width: 95px;
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    transform: translate(-45%, -35%);
+}
+.c2{
+    height: 75px;
+    width: 100px;
+    border: solid 1px;
+    border-radius: 15px;
+    background-color: black;
+    transform: rotate(90deg);
+}
+.c3{
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+.z{
+    margin-top: 150px;
+}
+.d{
+    height: 280px;
+    width: 100%;
+    border:  1px;
+    background: transparent;
+    background-image: url(./nike-removebg-preview.png);
+    background-position: center;
+    background-size: cover;
+    
+    
+}
+.imgd1{
+    height: 200px;
+    width: 100%;
+}
+.e{
+    font-size: 25px;
+    font-weight: bold;
+}
+.e1{
+    font-size: 18px;
+}
+.f{
+    height: 50px;
+    width: 50px;
+    border:  1px;
+    border-radius: 10px;
+    background-color: rgba(173, 216, 230, 0.24);
+}
+.f1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.g{
+    font-size: 25px;
+    font-weight: bold;
+}
+.g1{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-45%, -50%);
+}
+.h{
+    height: 130px;
+    width: 92%;
+    border:  1px;
+}
+.h1{
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.671);
+}
+.i{
+    height: 80px;
+    width: 92%;
+    border:  1px;
+    border-radius: 30px;
+    background-color: rgba(0, 128, 0, 0.61);
+}
+.i:hover{
+    background-color: blue;
+}
+.i1{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+

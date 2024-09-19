@@ -1,0 +1,423 @@
+.main{
+    height: 100%;
+    width: 100%;
+    border:   1px;
+}
+@media screen and (min-width:768px) {
+.main{
+    height: 140%;
+}    
+}
+.a{
+    height: 230px;
+    width: 270px;
+    border:  1px;;
+    position: absolute;
+    top: 19%;
+    left: 38%;
+    transform: translate(-62%, -81%);
+}
+.imga{
+    height: 230px;
+    width: 270px;
+}
+.b{
+    height: 310px;
+    width: 110px;
+    border:  1px;
+    position: absolute;
+    top: 30%;
+    left: 79%;
+    transform: translate(-21%, -70%);
+}
+.imgb{
+    height: 310px;
+    width: 110px;
+}
+.c{
+    height: 200px;
+    width: 270px;
+    border:  1px;
+    background: transparent;
+    position: absolute;
+    top: 26%;
+    left: 42%;
+    transform: translate(-58%, -74%);
+}
+.c1{
+    font-size: 60px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.d{
+    height: 133px;
+    width: 133px;
+    border:  1px;
+    border-radius: 133px;
+    position: absolute;
+    top: 38%;
+    left: 31%;
+    transform: translate(-69%, -62%);
+}
+.imgd{
+    height: 120px;
+    width: 120px;
+    border-radius: 130px;
+}
+.inputs{
+    height: 250px;
+    width: 81%;
+    border:  1px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -45%);
+    background: transparent;
+
+}
+.e{
+    height: 70px;
+    // width: 350px;
+    width: 100%;
+    border:  1px;
+    border-radius: 40px;
+    position: absolute;
+    top: 26%;
+    left: 50%;
+    transform: translate(-50%, -74%);
+    background-color: rgba(211, 211, 211, 0.199);
+}
+
+
+.e1{
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    transform: translate(-46%, -50%);   
+}
+.f{
+    height: 70px;
+    // width: 350px;
+    width: 100%;
+    border:  1px;
+    border-radius: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(211, 211, 211, 0.199);
+}
+.f1{
+    border:  1px;
+    width: 70%;
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 46%;
+    transform: translate(-54%, -50%);
+    
+}
+.f2{
+    height: 35px;
+    width: 35px;
+    border:  1px;
+    border-radius: 50px;
+    position: relative;
+    top: 50%;
+    left: 85%;
+    transform: translate(-15%, -50%);
+    background: transparent;
+}
+.f3{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.g{
+    height: 70px;
+    // width: 350px;
+    width: 100%;
+    border:  1px;
+    border-radius: 40px;
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%, -27%);
+    background-color: rgba(211, 211, 211, 0.199);
+}
+.g1{
+    font-size: 22px;
+    position: absolute;
+    top: 50%;
+    left: 67%;
+    transform: translate(-33%, -50%);   
+}
+.gg{
+    height: 25px;
+    width: 35px;
+    border:  1px;
+    position: absolute;
+    top: 50%;
+    left: 17%;
+    transform: translate(-83%, -50%);
+    background: transparent;
+}
+.imgg{
+    height: 25px;
+    width: 35px;
+    margin-top: -7px;
+}
+.gg1{
+    height: 25px;
+    width: 25px;
+    border:  1px;
+    position: absolute;
+    top: 50%;
+    left: 27%;
+    transform: translate(-73%, -50%);
+    background: transparent;
+}
+.ag{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.checklist{
+    width: 220px;
+    border:  1px;
+    position: absolute;
+    top: 74%;
+    left: 44%;
+    transform: translate(-56%, -26%);
+    background: transparent;
+}
+.h{
+    height: 80px;
+    width: 80%;
+    // width: 350px;
+    border:  1px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 255, 0.712);
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    transform: translate(-50%, -18%);
+}
+// .h:hover{
+//     background-color: green;
+// }
+.h1{
+    height: 80px;
+    width: 80%;
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    top: 86%;
+    left: 50%;
+    transform: translate(-50%, -14%);
+}
+.i{
+    height: 50px;
+    width: 100px;
+    border:   1px;
+    position: absolute;
+    top: 94%;
+    left: 50%;
+    transform: translate(-50%, -6%);
+}
+.ii{
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+@media screen and (min-width:768px) {
+    .a{
+        position: absolute;
+        top: 20%;
+        left: 13%;
+        transform: translate(-87%, -80%);
+    }
+    .b{
+        position: absolute;
+        top: 30%;
+        left: 94%;
+        transform: translate(-6%, -70%);
+    }
+    .c{
+    position: absolute;
+    top: 18%;
+    left: 42%;
+    transform: translate(-58%, -82%);
+    }
+    .d{
+        position: absolute;
+        top: 30%;
+        left: 38%;
+        transform: translate(-62%, -70%);
+    }
+    .inputs{
+        height: 250px;
+        width: 35%;
+        border:  1px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: transparent;
+    }
+    .e{
+        height: 70px;
+        // width: 350px;
+        width: 100%;
+        border:  1px;
+        border-radius: 40px;
+        position: absolute;
+        top: 26%;
+        left: 50%;
+        transform: translate(-50%, -74%);
+        background-color: rgba(211, 211, 211, 0.199);
+    }
+    .f{
+        height: 70px;
+        // width: 350px;
+        width: 100%;
+        border:   1px;
+        border-radius: 40px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgba(211, 211, 211, 0.199);
+    }
+    .g{
+        height: 70px;
+        // width: 350px;
+        width: 100%;
+        border:  1px;
+        border-radius: 40px;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translate(-50%, -25%);
+        background-color: rgba(211, 211, 211, 0.199);
+    }
+    .checklist{
+        width: 220px;
+        border:  1px;
+        position: absolute;
+        top: 69%;
+        left: 44%;
+        transform: translate(-56%, -31%);
+    }
+    .h{
+        height: 80px;
+        width: 35%;
+        // width: 350px;
+        border:   1px;
+        border-radius: 15px;
+        background-color: rgba(0, 0, 255, 0.712);
+        position: absolute;
+        top: 81%;
+        left: 50%;
+        transform: translate(-50%, -19%);
+    }
+    .h1{
+        height: 77px;
+        width: 35%;
+        font-size: 25px;
+        color: white;
+        border-radius: 15px;
+        position: absolute;
+        top: 82%;
+        left: 50%;
+        transform: translate(-50%, -18%);
+    }
+    .i{
+        height: 50px;
+        width: 100px;
+        border:   1px;
+        position: absolute;
+        top: 92%;
+        left: 50%;
+        transform: translate(-50%, -8%);
+    }
+}
+
+
+ion-checkbox {
+    --size: 16px;
+    --border-radius: 50%;
+    --background: white;
+    --border-width: 2px;
+    --border-color: #3880ff;
+  }
+  
+  ion-item {
+    --inner-padding-top: 0px;
+  --inner-padding-bottom: 0px;
+  --inner-padding-start: 0px;
+  --inner-padding-end: 0px;
+  --padding-top: 0px;
+  --padding-bottom: 0px;
+  --padding-start: 0px;
+  --padding-end: 0px;
+  margin: -16px 0; /* Adjust this value to control the space between items */
+  }
+  
+  ion-label {
+    padding-left: 8px;
+  }
+  @media screen and (max-width:560px) {
+    .d{
+        height: 133px;
+        width: 133px;
+        border:  1px;
+        border-radius: 133px;
+        position: absolute;
+        top: 43%;
+        left: 31%;
+        transform: translate(-69%, -57%);
+    }
+    .inputs{
+        height: 250px;
+        width: 81%;
+        border:  1px;
+        position: absolute;
+        top: 65%;
+        left: 50%;
+        transform: translate(-50%, -35%);
+        background: transparent;
+    }
+    .h1{
+        height: 80px;
+        width: 80%;
+        font-size: 25px;
+        color: white;
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -10%);
+    }
+    .i{
+        height: 50px;
+        width: 100px;
+        border:   1px;
+        position: absolute;
+        top: 102%;
+        left: 50%;
+        transform: translate(-50%, -0%);
+    }
+  }

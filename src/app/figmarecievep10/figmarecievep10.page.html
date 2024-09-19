@@ -1,0 +1,292 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet">
+<!-- content starts here -->
+
+<ion-content [fullscreen]="true">
+  <ion-grid class="main">
+<ion-row class="ion-margin-top ion-margin">
+  <ion-col size-md="1" size="2">
+    <ion-card class="a">
+      <img class="imga" src="{{recievearry.recieveimg1}}" alt="">
+    </ion-card>
+  </ion-col>
+  <ion-col size-md="1" size="1"></ion-col>
+  <ion-col size-md="2" size="4">
+    <ion-list class="a1">
+      <p class="ap">{{recievearry.recieverecieve}} <br><span class="ap1"> {{recievearry.recieveorders}} </span></p>
+    </ion-list>
+  </ion-col>
+  <ion-col size-md="8" size="5">
+    <ion-list class="aa">
+      <ion-list class="aa1"><ion-icon class="ai" color="primary" name="{{recievearry1.recievesetting}}"></ion-icon></ion-list>
+      <ion-list class="aa2"><ion-icon class="ai" color="primary" name="{{recievearry1.recievereorder}}"></ion-icon></ion-list>
+      <ion-list class="aa2"><ion-icon class="ai" color="primary" name="{{recievearry1.recievescan}}"></ion-icon></ion-list>
+    </ion-list>
+  </ion-col>
+</ion-row>
+
+
+<ion-row>
+<!-- card1 -->
+<ion-col size-md="4" size="12" class="z" *ngFor="let item of recievedata">
+<ion-list class="ccc">
+<ion-row class="ion-margin-top ion-margin">
+<ion-col size-md="2" size="4">
+  <ion-row class="">
+  <ion-col size="6"><img class="imgc" src="{{item.recieveimg1}}" alt=""></ion-col>
+  <ion-col size="6"><img class="imgc" src="{{item.recieveimg2}}" alt=""></ion-col>
+  <ion-col size="12"><img class="imgcc" src="{{item.recieveimg3}}" alt=""></ion-col>
+  </ion-row>
+</ion-col>
+<ion-col size-md="10" size="8">
+  <ion-row>
+    <ion-col size="6">
+      <ion-list class="c1">
+        <p class="cp">{{item.recieveorderno}} <br><span class="cp1"> {{item.recievestandard}} </span></p>
+      </ion-list>
+    </ion-col>
+    <ion-col size="6">
+      <ion-list class="c2"><p class="cp2"> {{item.recieveitems}} </p></ion-list>
+    </ion-col>
+    <ion-col size="6">
+      <ion-list class="c3"><p class="cp3"> {{item.recievepacked}} </p></ion-list>
+    </ion-col>
+    <ion-col size="6">
+      <ion-button (click)="next()" class="cb"> {{item.recievetrack}} </ion-button>
+    </ion-col>
+  </ion-row>
+</ion-col>
+</ion-row>
+</ion-list>
+</ion-col>
+
+<!-- card2 -->
+<!-- <ion-col size-md="4" size="12" class="z1">
+<ion-list class="ccc">
+  <ion-row class="ion-margin-top ion-margin">
+  <ion-col size-md="2" size="4">
+    <ion-row class="">
+    <ion-col size="6"><img class="imgc" src="{{arry.img4}}" alt=""></ion-col>
+    <ion-col size="6"><img class="imgc" src="{{arry.img5}}" alt=""></ion-col>
+    <ion-col size="12"><img class="imgcc" src="{{arry.img6}}" alt=""></ion-col>
+    </ion-row>
+  </ion-col>
+  <ion-col size-md="10" size="8">
+    <ion-row>
+      <ion-col size="6">
+        <ion-list class="c1">
+          <p class="cp">{{arry.text6}} <br><span class="cp1"> {{arry.text7}} </span></p>
+        </ion-list>
+      </ion-col>
+      <ion-col size="6">
+        <ion-list class="c2"><p class="cp2"> {{arry.text8}} </p></ion-list>
+      </ion-col>
+      <ion-col size="6">
+        <ion-list class="c3"><p class="cp3"> {{arry.text9}} </p></ion-list>
+      </ion-col>
+      <ion-col size="6">
+        <ion-button class="cb"> {{arry.text10}} </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-col>
+  </ion-row>
+  </ion-list>
+</ion-col> -->
+
+  <!-- card3 -->
+  <!-- <ion-col size-md="4" size="12" class="z1">
+  <ion-list class="ccc">
+    <ion-row class="ion-margin-top ion-margin">
+    <ion-col size-md="2" size="4">
+      <ion-row class="">
+      <ion-col size="6"><img class="imgc" src="{{item.img8}}" alt=""></ion-col>
+      <ion-col size="6"><img class="imgc" src="{{item.img9}}" alt=""></ion-col>
+      <ion-col size="12"><img class="imgcc" src="{{item.img10}}" alt=""></ion-col>
+      </ion-row>
+    </ion-col>
+    <ion-col size-md="10" size="8">
+      <ion-row>
+        <ion-col size="6">
+          <ion-list class="c1">
+            <p class="cp">{{item.text11}} <br><span class="cp1"> {{item.text12}} </span></p>
+          </ion-list>
+        </ion-col>
+        <ion-col size="6">
+          <ion-list class="c2"><p class="cp2">{{item.text13}} </p></ion-list>
+        </ion-col>
+        <ion-col size="6">
+          <ion-list class="c3"><p class="cp3">{{item.text14}} </p></ion-list>
+        </ion-col>
+        <ion-col size="6">
+          <ion-button class="cb" fill="outline">{{item.text15}} </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-col>
+    </ion-row>
+    </ion-list>
+  </ion-col> -->
+
+  <!-- card4 -->
+  <!-- <ion-col size-md="4" size="12" class="z1">
+    <ion-list class="ccc">
+      <ion-row class="ion-margin-top ion-margin">
+      <ion-col size-md="2" size="4">
+        <ion-row class="">
+        <ion-col size="6"><img class="imgc" src="{{arry2.img11}}" alt=""></ion-col>
+        <ion-col size="6"><img class="imgc" src="{{arry2.img12}}" alt=""></ion-col>
+        <ion-col size="12"><img class="imgcc" src="{{arry2.img13}}" alt=""></ion-col>
+        </ion-row>
+      </ion-col>
+      <ion-col size-md="10" size="8">
+        <ion-row>
+          <ion-col size="6">
+            <ion-list class="c1">
+              <p class="cp">{{arry2.text16}} <br><span class="cp1">{{arry2.text17}} </span></p>
+            </ion-list>
+          </ion-col>
+          <ion-col size="6">
+            <ion-list class="c2"><p class="cp2">{{arry2.text18}} </p></ion-list>
+          </ion-col>
+          <ion-col size="6">
+            <ion-list class="c3"><p class="cp3">{{arry2.text19}} </p></ion-list>
+          </ion-col>
+          <ion-col size="6">
+            <ion-button class="cb" fill="outline">{{arry2.text20}} </ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+      </ion-row>
+      </ion-list>
+    </ion-col> -->
+
+<!-- card5 -->
+<!-- <ion-col size-md="4" size="12" class="z1">
+      <ion-list class=" ccc">
+        <ion-row class="ion-margin-top ion-margin">
+        <ion-col size-md="2" size="4">
+          <ion-row class="">
+            <ion-col size="6"><img class="imgc" src="{{arry3.img14}}" alt=""></ion-col>
+            <ion-col size="6"><img class="imgc" src="{{arry3.img15}}" alt=""></ion-col>
+          <ion-col size="12"><img class="imgcc" src="{{arry3.img16}}" alt=""></ion-col>
+          </ion-row>
+        </ion-col>
+        <ion-col size-md="10" size="8">
+          <ion-row>
+            <ion-col size="6">
+              <ion-list class="c1">
+                <p class="cp">{{arry3.text21}} <br><span class="cp1">{{arry3.text22}}</span></p>
+              </ion-list>
+            </ion-col>
+            <ion-col size="6">
+              <ion-list class="c2"><p class="cp2">{{arry3.text23}}</p></ion-list>
+            </ion-col>
+            <ion-col size="6">
+              <ion-list class="c3"><p class="cp3">{{arry3.text24}}</p></ion-list>
+            </ion-col>
+            <ion-col size="6">
+              <ion-button class="cb" fill="outline">{{arry3.text25}}</ion-button>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+        </ion-row>
+        </ion-list>
+      </ion-col> -->
+
+<!-- card6 -->
+<!-- <ion-col size-md="4" size="12" class="z1">
+        <ion-list class="ccc">
+          <ion-row class="ion-margin-top ion-margin">
+          <ion-col size-md="2" size="4">
+            <ion-row class="">
+            <ion-col size="6"><img class="imgc" src="{{arry4.img17}}" alt=""></ion-col>
+            <ion-col size="6"><img class="imgc" src="{{arry4.img18}}" alt=""></ion-col>
+            <ion-col size="12"><img class="imgcc" src="{{arry4.img19}}" alt=""></ion-col>
+            </ion-row>
+          </ion-col>
+          <ion-col size-md="10" size="8">
+            <ion-row>
+              <ion-col size-md="6" size="6">
+                <ion-list class="c1">
+                  <p class="cp">{{arry4.text26}} <br><span class="cp1">{{arry4.text27}}</span></p>
+                </ion-list>
+              </ion-col>
+              <ion-col size-md="6" size="6">
+                <ion-list class="c2"><p class="cp2">{{arry4.text28}}</p></ion-list>
+              </ion-col>
+              <ion-col size-md="6" size="6">
+                <ion-list class="c3"><p class="cp3">{{arry4.text29}}</p></ion-list>
+              </ion-col>
+              <ion-col size-md="6" size="6">
+                <ion-button class="cb">{{arry4.text30}}</ion-button>
+              </ion-col>
+            </ion-row>
+          </ion-col>
+          </ion-row>
+          </ion-list>
+        </ion-col> -->
+      </ion-row>
+
+
+
+
+
+
+
+
+      <ion-row class="ion-margin-top ion-margin">
+        <ion-col class="y" size-md="6" size="6">1</ion-col>
+        <ion-col class="y" size-md="6" size="6">1</ion-col>
+        <ion-col class="y" size-md="6" size="6">1</ion-col>
+        <ion-col class="y" size-md="6" size="6">1</ion-col>
+      </ion-row>
+
+
+<!-- <ion-col size-md="" size="5">
+  <ion-list class="c1">
+    <p class="cp">Order #92287157 <br><span class="cp1">Standard Delivery</span></p>
+    <p class="cp2">Packed</p>
+  </ion-list>
+</ion-col>
+<ion-col size-md="2" size="1">6</ion-col> 
+<ion-col size-md="4" size="3">
+  <ion-list class="c2">
+    <ion-list class="c3"></ion-list>
+    <ion-list class="c4">
+      <ion-list class="cb"></ion-list>
+    </ion-list>
+  </ion-list>
+</ion-col> -->
+
+
+  </ion-grid>
+
+</ion-content>
+
+
+<!-- footer -->
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="home-outline" size="large" color="primary"></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="heart-outline" size="large" color="primary" ></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="document-text-outline" size="large" color="primary" ></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="bag-handle-outline" size="large" color="primary" ></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="person-outline" size="large" color="dark" ></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

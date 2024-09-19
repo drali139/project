@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true">
+  <ion-grid>
+    <ion-row *ngFor="let card of data">
+      <ion-col size="2">
+        <ion-card class="card">
+          <img [src]="card.img" class="img">
+        </ion-card>
+      </ion-col>
+      <ion-col size="10">
+        <ion-list class="text">
+          {{ card.Name }}
+        </ion-list>
+      </ion-col>
+      <ion-col size="12">
+        <swiper-container [breakpoints]="{  
+          '280': { 'slidesPerView': 1, 'spaceBetween': 10 },
+          '380': { 'slidesPerView': 1, 'spaceBetween': 10 },
+          '412': { 'slidesPerView': 1, 'spaceBetween': 10 },
+          '680': { 'slidesPerView': 1, 'spaceBetween': 10 },
+          '764': { 'slidesPerView': 1, 'spaceBetween': 5 }
+        }" class="ion-margin-top">
+          <swiper-slide *ngFor="let item of card.item1" class="ion-text-center">
+            <img [src]="item.img" class="img2">
+          </swiper-slide>
+        </swiper-container>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

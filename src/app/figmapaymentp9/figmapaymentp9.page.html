@@ -1,0 +1,397 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet">
+<!-- content starts here -->
+
+<ion-content [fullscreen]="true">
+  <ion-grid class="main">
+    <ion-row class="ion-margin ion-margin-top">
+      <ion-col size="3">
+        <a class="see-more-btn" (click)="back()">Back</a>
+      </ion-col>
+    </ion-row>
+    <ion-row class="ion-margin ion-margin-top">
+      <ion-col size-md="2" size="4">
+        <ion-list class="a"><p class="ap">{{paymentarry.text1}} </p></ion-list>
+      </ion-col>
+      <ion-col size-md="4" size="8"></ion-col>
+    </ion-row>
+
+
+    <ion-row class="ion-margin-top ion-margin">
+      <ion-col size-md="6" size="12">
+        <ion-list class="b">
+          <ion-list class="b1">
+            <p class="bp1">{{shippingarry.text2}} </p>
+            <p class="bp2">{{shippingarry.text3}} </p>
+          </ion-list>
+          <ion-list class="b2">
+            <ion-list class="b3"><ion-icon id="address-modal" class="bi" color="light" name="{{shippingarry.icon1}}"></ion-icon></ion-list>
+          </ion-list>
+        </ion-list>
+        <!-- modal -->
+        <ion-modal trigger="address-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+          <ng-template>
+            <div class="block">
+    <ion-grid>
+      <ion-row class="ion-margin-top ion-margin">
+        <ion-col size="8">
+          <ion-list class="shiplist">
+          <p class="shipadd">{{modal1p9.shippingaddress}} </p>
+        </ion-list>
+        </ion-col>
+        <ion-col size="4"></ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ion-grid>
+      <ion-row class="rowcl">
+        <ion-col size="12">
+          <ion-list class="mainlist">
+          <ion-list class="countrylist">
+            <ion-item>
+              <ion-input [(ngModel)]="shippingData.country" labelPlacement="floating" placeholder="Pakistan">
+                <div slot="label">Country</div>
+              </ion-input>
+            </ion-item>
+          </ion-list>
+          <ion-list class="iconlist">
+            <ion-icon class="icon" name="arrow-forward-outline" color="light"></ion-icon>
+          </ion-list>
+        </ion-list>
+        </ion-col>
+        <ion-col size="12">
+          <ion-list class="addresslist">
+            <ion-item>
+              <ion-input [(ngModel)]="shippingData.address" labelPlacement="floating" placeholder="Magadi Main Rd">
+                <div slot="label">Address</div>
+              </ion-input>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+        <ion-col size="12">
+          <ion-list class="addresslist">
+            <ion-item>
+              <ion-input [(ngModel)]="shippingData.city" labelPlacement="floating" placeholder="Lahore">
+                <div slot="label">Town / City</div>
+              </ion-input>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+        <ion-col size="12">
+          <ion-list class="addresslist">
+            <ion-item>
+              <ion-input [(ngModel)]="shippingData.postcode" labelPlacement="floating" placeholder="05450">
+                <div slot="label">Postcode</div>
+              </ion-input>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    
+    <ion-grid>
+      <ion-row>
+        <ion-col size="12" class="ion-text-center">
+    <ion-button (click)="saveChanges()" class="btn">{{modal1p9.savechanges}} </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+            </div>
+          </ng-template>
+        </ion-modal>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-margin-top ion-margin">
+      <ion-col size-md="6" size="12">
+        <ion-list class="b">
+          <ion-list class="b1">
+            <p class="bp1">{{contactarry.text4}} </p>
+            <p class="bp2">{{contactarry.text5}} </p>
+            <p class="bp3">{{contactarry.text6}} </p>
+          </ion-list>
+          <ion-list class="b2">
+            <ion-list class="b3"><ion-icon id="styling-modal" class="bi" color="light" name="{{contactarry.icon2}}"></ion-icon></ion-list>
+          </ion-list>
+        </ion-list>
+        <!-- 2nd Modal -->
+        <ion-modal class="styling" #modal trigger="styling-modal">
+          <ng-template>
+            <ion-content>
+              <ion-toolbar class="styling1">
+                <ion-title>{{modal2p9.contactinformation}} </ion-title>
+                <ion-buttons slot="end">
+                  <ion-button color="light" (click)="modal.dismiss()">Close</ion-button>
+                </ion-buttons>
+              </ion-toolbar>
+              <ion-list>
+              <ion-grid>
+                <ion-row class="ion-margin-top ion-margin">
+                  <ion-col size="12">
+                    <ion-list class="dresslist">
+                      <ion-item>
+                        <ion-input [(ngModel)]="contactData.phone" labelPlacement="floating" placeholder="+923023546416">
+                          <div slot="label">Phone No.</div>
+                        </ion-input>
+                      </ion-item>
+                    </ion-list>
+                  </ion-col>
+                  <ion-col size="12">
+                    <ion-list class="dresslist">
+                      <ion-item>
+                        <ion-input [(ngModel)]="contactData.email" labelPlacement="floating" placeholder="@gmail.com">
+                          <div slot="label">Email</div>
+                        </ion-input>
+                      </ion-item>
+                    </ion-list>
+                  </ion-col>
+                  <ion-col size="12" class="ion-text-center">
+    
+                  <ion-button class="btn1" (click)="saveContactChanges()">{{modal2p9.savechanges1}} </ion-button>
+        
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+              </ion-list>
+            </ion-content>
+          </ng-template>
+        </ion-modal>
+    
+      </ion-col>
+    </ion-row>
+
+
+<!-- all in one rows -->
+ <ion-row>
+  <ion-col size-md="6" size="12">
+    <ion-row class="ion-margin ion-margin-top">
+      <ion-col size-md="2" size="3">
+        <ion-list class="a"><p class="ap">{{itemsarry.text7}} </p></ion-list>
+      </ion-col>
+      <ion-col size-md="4" size="2"><ion-badge class="a1" color="medium"><p class="ap1">{{itemsarry.cart}} </p></ion-badge></ion-col>
+      <ion-col size-md="6" size="7">
+        <!-- <ion-list class="aa"><p class="aap">Add Voucher</p></ion-list> -->
+         <ion-button (click)="next()" fill="outline" shape="round" class="aa">{{itemsarry.text9}} </ion-button>
+      </ion-col>
+    </ion-row>
+
+
+
+    <ion-row class="ion-margin-top ion-margin" *ngFor="let item of figmap9">
+      <ion-col size-md="1" size="2">
+        <ion-card class="k">
+          <img class="imgk" src="{{item.img1}}"  alt="">
+        </ion-card>
+        <ion-badge class="kb">{{item.quantity}} </ion-badge>
+      </ion-col>
+      <ion-col size-md="3" size="1"></ion-col>
+      <ion-col size-md="3" size="5">
+        <ion-list class="k1"><p class="kp">{{item.text11}} </p></ion-list>
+      </ion-col>
+      <ion-col size-md="3" size="1"></ion-col>
+      <ion-col size-md="2" size="3">
+        <ion-list class="k2"><p class="kp1">${{item.subtotal}}.00 </p></ion-list>
+      </ion-col>
+    </ion-row>
+
+
+    <!-- <ion-row class="ion-margin-top ion-margin">
+      <ion-col size-md="1" size="2">
+        <ion-card class="k">
+          <img class="imgk" src="{{arry5.img2}}" alt="">
+          <ion-badge class="kb">{{arry5.text13}}</ion-badge>
+        </ion-card>
+      </ion-col>
+      <ion-col size-md="3" size="1"></ion-col>
+      <ion-col size-md="3" size="5">
+        <ion-list class="k1"><p class="kp">{{arry5.text14}}</p></ion-list>
+      </ion-col>
+      <ion-col size-md="3" size="1"></ion-col>
+      <ion-col size-md="2" size="3">
+        <ion-list class="k2"><p class="kp1">{{arry5.text15}}</p></ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-margin-top ion-margin">
+      <ion-col size-md="1" size="2">
+        <ion-card class="k">
+          <img class="imgk" src="{{arry6.img3}}" alt="">
+          <ion-badge class="kb">{{arry6.text16}}</ion-badge>
+        </ion-card>
+      </ion-col>
+      <ion-col size-md="3" size="1"></ion-col>
+      <ion-col size-md="3" size="5">
+        <ion-list class="k1"><p class="kp">{{arry6.text17}}</p></ion-list>
+      </ion-col>
+      <ion-col size-md="3" size="1"></ion-col>
+      <ion-col size-md="2" size="3">
+        <ion-list class="k2"><p class="kp1">{{arry6.text18}}</p></ion-list>
+      </ion-col>
+    </ion-row>
+
+
+    <ion-row class="ion-margin-top ion-margin" >
+      <ion-col size-md="1" size="2">
+        <ion-card class="k">
+          <img class="imgk" src="{{arry7.img4}}" alt="">
+          <ion-badge class="kb">{{arry7.text19}}</ion-badge>
+        </ion-card>
+      </ion-col>
+      <ion-col size-md="3" size="1"></ion-col>
+      <ion-col size-md="3" size="5">
+        <ion-list class="k1"><p class="kp">{{arry7.text20}}</p></ion-list>
+      </ion-col>
+      <ion-col size-md="3" size="1"></ion-col>
+      <ion-col size-md="2" size="3">
+        <ion-list class="k2"><p class="kp1">{{arry7.text21}}</p></ion-list>
+      </ion-col>
+    </ion-row> -->
+  </ion-col>
+
+
+  <!-- order-2 -->
+    <ion-col size-md="6" size="12">
+    <ion-row class="ion-margin ion-margin-top">
+      <ion-col size-md="2" size="6">
+        <ion-list class="aaa"><p class="ap">{{optionsarry.text22}}</p></ion-list>
+      </ion-col>
+      <ion-col size-md="4" size="6"></ion-col>
+    </ion-row>
+    
+
+    <ion-row class="ion-margin-top ion-margin l">
+      <ion-col size-md="7" size="9">
+        <ion-list class="l1"><ion-checkbox [(ngModel)]="standardSelected" (ionChange)="onShippingChange('standard')" class="round-checkbox"></ion-checkbox></ion-list>
+        <ion-list class="l2">
+          <p class="lp">{{figmapay.standard}}</p>
+        </ion-list>
+        <ion-list class="l3">
+          <p class="lp1">{{figmapay.standarddays}}</p>
+        </ion-list>
+      </ion-col>
+      <ion-col size-md="4" size="1"></ion-col>
+      <ion-col size-md="1" size="2">
+        <ion-list  class="l4"><p class="lp2">{{figmapay.free}}</p></ion-list>
+      </ion-col>
+    </ion-row>
+
+    <ion-row class="ion-margin-top ion-margin l">
+      <ion-col size-md="7" size="9">
+        <ion-list class="l1"><ion-checkbox [(ngModel)]="expressSelected" (ionChange)="onShippingChange('express')" class="round-checkbox"></ion-checkbox></ion-list>
+        <ion-list class="l2">
+          <p class="lp">{{figmapay1.express}}</p>
+        </ion-list>
+        <ion-list class="l3">
+          <p class="lp1">{{figmapay1.expressdays}}</p>
+        </ion-list>
+      </ion-col>
+      <ion-col size-md="4" size="1"></ion-col>
+      <ion-col size-md="1" size="2">
+        <ion-list  class="l4"><p class="lp2">{{figmapay1.shippingfee}}</p></ion-list>
+      </ion-col>
+    </ion-row>
+
+<ion-list class="ion-margin Delivery"><p class="Deliveryp">{{warnarry.text29}}</p></ion-list>
+
+    <ion-row class="ion-margin ion-margin-top">
+      <ion-col size-md="3" size="6">
+        <ion-list class="aaa"><p class="ap">{{methodarry.text30}}</p></ion-list>
+      </ion-col>
+      <ion-col size-md="8" size="4"></ion-col>
+      <ion-col size-md="1" size="2">
+          <ion-list class="m3"><ion-icon class="mi" color="light" name="{{methodarry.icon3}}" (click)="p12()"></ion-icon></ion-list>
+      </ion-col>
+    </ion-row>
+
+
+<!-- Debit Card -->
+<ion-list class="debitb ion-margin ion-margin-top" *ngIf="debitCardData">
+  <ion-row>
+    <ion-col size="4">
+      <ion-list class="debitbb">
+        <ion-list class="debitb1"></ion-list>
+        <ion-list class="debitb2"></ion-list>
+      </ion-list>
+    </ion-col>
+    <ion-col size="6"></ion-col>
+    <ion-col size="2">
+      <ion-list class="debitb3"><ion-icon  class="debitbi" color="primary" [name]="paymentarry.icon1"></ion-icon></ion-list>
+    </ion-col>
+  </ion-row>
+
+  <ion-row>
+    <ion-col class="ion-text-center"><p class="debitc">{{paymentarry.text3}}</p></ion-col>
+    <ion-col class="ion-text-center"><p class="debitc">{{paymentarry.text4}}</p></ion-col>
+    <ion-col class="ion-text-center"><p class="debitc">{{paymentarry.text5}}</p></ion-col>
+    <ion-col class="ion-text-center"><p>{{paymentarry.text6}}</p></ion-col>
+  </ion-row>
+
+  <ion-row class="debitaa">
+    <ion-col size="8"><ion-list class="debitd"><p class="debitdp">{{paymentarry.text7}}</p></ion-list></ion-col>
+    <ion-col size="1"></ion-col>
+    <ion-col size="3"><ion-list class="debitd1"><p class="debitdp1">{{paymentarry.text8}}</p></ion-list></ion-col>
+  </ion-row>
+</ion-list>
+
+
+
+<ion-row class="ion-margin-top ion-margin">
+  <ion-col size-md="2" size="4">
+    <ion-button color="medium" shape="round" class="n">{{arrybutton.text31}}</ion-button>
+  </ion-col>
+  <ion-col size-md="10" size="8"></ion-col>
+</ion-row>
+
+
+<ion-row class="ion-margin-top ion-margin">
+  <ion-col size-md="4" size="6">
+    <ion-list class="p"><p class="pp">{{payarry.total}}</p></ion-list>
+  </ion-col>
+  <ion-col size-md="5" size="1"></ion-col>
+  <ion-col size-md="3" size="5">
+    <!-- <a class="button">{{payarry.text33}} </a> -->
+    <ion-button color="dark" class="pb" (click)="pay()">{{payarry.pay}}</ion-button>
+  </ion-col>
+</ion-row>
+</ion-col>
+</ion-row>
+<ion-row class="ion-margin-top ion-margin">
+  <ion-col class="y" size-md="6" size="6">1</ion-col>
+  <ion-col class="y" size-md="6" size="6">1</ion-col>
+  <ion-col class="y" size-md="6" size="6">1</ion-col>
+  <ion-col class="y" size-md="6" size="6">1</ion-col>
+</ion-row>
+  </ion-grid>
+
+
+
+</ion-content>
+
+<!-- footer -->
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center ">
+        <ion-icon name="home-outline" size="large" color="primary" (click)="home()"></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center ">
+        <ion-icon name="heart-outline" size="large" color="primary" ></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center ">
+        <ion-icon name="document-text-outline" size="large" color="primary" (click)="figmap7()"></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center ">
+        <ion-icon name="bag-handle-outline" size="large" color="primary" (click)="cart()"></ion-icon>
+        <ion-badge shape="round" class="ion-badge">{{figmap9arr.cart}} </ion-badge>
+      </ion-col>
+      <ion-col class="ion-text-center ">
+        <ion-icon name="person-outline" size="large" color="dark" (click)="setting()"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

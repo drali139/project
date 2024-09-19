@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "757919710018",
+    "project_id": "fir-pn-2b312",
+    "storage_bucket": "fir-pn-2b312.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:757919710018:android:4410a325fbe2e6b235e6db",
+        "android_client_info": {
+          "package_name": "com.ali.pro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTYu_yTWYm59RcnVsZAbchWj76CtyBtIo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

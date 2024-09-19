@@ -1,0 +1,65 @@
+<ion-content [fullscreen]="true">
+  <ion-toolbar>
+    <ion-segment [(ngModel)]="selectedSegment" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="shipped">
+        <ion-label>Shipped</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="delivered">
+        <ion-label>Delivered</ion-label>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+
+  <div [ngSwitch]="selectedSegment">
+    <ion-list *ngSwitchCase="'shipped'">
+      <ion-item *ngFor="let item of shippedItems; let i = index">
+        <ion-thumbnail slot="start">
+          <img [src]="item.img1">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>{{ item.text11 }}</h2>
+          <p>Quantity: {{ item.quantity }}</p>
+          <p>Subtotal: ${{ item.subtotal }}</p>
+          <ion-button (click)="changeStatus(item, i)" style="float: left;" fill="outline" >Status Change</ion-button> 
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-list *ngSwitchCase="'delivered'">
+      <ion-item *ngFor="let item of deliveredItems">
+        <ion-thumbnail slot="start">
+          <img [src]="item.img1">
+        </ion-thumbnail>
+        <ion-label>
+          <h2>{{ item.text11 }}</h2>
+          <p>Quantity: {{ item.quantity }}</p>
+          <p>Subtotal: ${{ item.subtotal }}</p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </div>
+</ion-content>
+
+
+<!-- footer -->
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="home-outline" size="large" color="primary" (click)="home()"></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="heart-outline" size="large" color="primary" ></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="document-text-outline" size="large" color="primary" (click)="figmap7"></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="bag-handle-outline" size="large" color="primary" (click)="cart()"></ion-icon>
+        <ion-badge shape="round" class="ion-badge">{{segmentsarr.cart}} </ion-badge>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="person-outline" size="large" color="primary" (click)="setting()"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

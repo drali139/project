@@ -1,0 +1,58 @@
+<ion-content [fullscreen]="true">
+  <ion-grid class="main">
+    <ion-list class="a">
+      <img class="imga" src="{{figmap3arry.img1}}" alt="">
+    </ion-list>
+    <swiper-container pagination="true"  [breakpoints]="{
+      '360':{
+        'slidesPerView':1,
+        'spaceBetween':10,
+      },
+      '760':{
+        'slidesPerView':4,
+        'spaceBetween':10,
+      },
+      '1221':{
+        'slidesPerView':4,
+        'spaceBetween':10,
+      },
+      
+  
+    }">
+      <swiper-slide *ngFor="let item of figmap3data">
+        <ion-card class="card">
+          <img class="imgb" src="{{item.img2}}" alt="">
+          <h1 class="ion-text-center c">{{item.hello}} </h1>
+        <p class="ion-text-center d">{{item.description}} </p>
+        </ion-card>
+      </swiper-slide>
+      <!-- <swiper-slide>
+        <ion-card class="card">
+          <img class="imgb" src="{{figmap3arry2.img3}}" alt="">
+          <h1 class="ion-text-center c">{{arry2.text3}}</h1>
+        <p class="ion-text-center d">{{arry2.text4}}</p>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-card class="card">
+          <img class="imgb" src="{{arry3.img4}}" alt="">
+          <h1 class="ion-text-center c">{{arry3.text5}}</h1>
+        <p class="ion-text-center d">{{arry3.text6}}</p>
+        </ion-card>
+      </swiper-slide>
+      <swiper-slide>
+        <ion-card class="card">
+          <img class="imgb" src="{{arry4.img5}}" alt="">
+          <h1 class="ion-text-center c">{{arry4.text7}}</h1>
+        <p class="ion-text-center d">{{arry4.text8}}</p>
+        </ion-card>
+      </swiper-slide> -->
+      </swiper-container>
+
+
+
+<ion-list class="ion-text-center">
+<ion-button class="x" (click)="next()">{{figmap3arry2.text9}} </ion-button>
+</ion-list>
+  </ion-grid>
+</ion-content>

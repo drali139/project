@@ -1,0 +1,92 @@
+
+
+<ion-content [fullscreen]="true">
+  <!-- <ion-content class="ion-padding">
+    <ion-button id="open-toast" color="light">Open</ion-button>
+    <p id="message">This toast example uses triggers to automatically open a toast when the button is clicked.</p>
+    <ion-toast trigger="open-toast" message="This toast will disappear after 3 seconds" [duration]="3000"></ion-toast>
+  </ion-content>
+
+
+
+
+  
+  <ion-content class="ion-padding">
+    <ion-button fill="outline" (click)="setOpen(true)">Open</ion-button>
+    <ion-toast
+      [isOpen]="isToastOpen"
+      message="This toast will close in 5 seconds"
+      [duration]="5000"
+      (didDismiss)="setOpen(false)"
+    ></ion-toast>
+  </ion-content>
+
+
+
+
+
+  <ion-button color="warning" (click)="presentToast('top')">Present Toast At the Top</ion-button>
+<ion-button fill="outline" color="secondary"  (click)="presentToast('middle')">Present Toast At the Middle</ion-button>
+<ion-button color="danger" (click)="presentToast('bottom')">Present Toast At the Bottom</ion-button>
+
+
+
+
+
+
+
+
+
+
+
+<ion-content class="ion-padding">
+  <ion-button id="headerAnchor">Anchor to Header</ion-button>
+  <ion-button id="footerAnchor">Anchor to Footer</ion-button>
+
+  <ion-toast
+    trigger="headerAnchor"
+    position="top"
+    positionAnchor="header"
+    message="Hello World!"
+    duration="2000"
+  ></ion-toast>
+  <ion-toast
+    trigger="footerAnchor"
+    position="bottom"
+    positionAnchor="footer"
+    message="Hello World!"
+    duration="2000"
+  ></ion-toast>
+</ion-content>
+
+
+
+
+
+
+
+
+<ion-content class="ion-padding">
+  <ion-button id="open-toast">Open Toast</ion-button>
+  <ion-toast
+    message="This toast can be swiped to dismiss"
+    trigger="open-toast"
+    swipeGesture="vertical"
+    position="bottom"
+    positionAnchor="footer"
+  ></ion-toast>
+</ion-content> -->
+
+
+
+
+<ion-button [color]="buttonColor" (click)="toggleButtonColor()" shape="round" fill="outline">Change color</ion-button>
+
+
+
+
+
+
+
+
+</ion-content>

@@ -1,0 +1,341 @@
+ion-modal#example-modal {
+    --width: 85%;
+    --height: 80%;
+    --border-radius: 6px;
+    --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+  }
+  
+  ion-modal#example-modal ion-content {
+    --overflow: auto;
+    --height: 100%;
+  }
+// .main{
+//     height: 100%;
+//     width: 100%;
+// }
+.filter{
+    height: 45px;
+    width: 75px;
+    border:  1px;
+}
+.filtertext{
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: -4px;
+}
+.swp{
+    margin-top: -10px;
+}
+.c{
+    height: 130px;
+    width: 100px;
+    border:  1px;
+    transition: all 0.3s ease;
+}
+.c:hover{
+    transform: scale(1.1);
+}
+.c1{
+    height: 80px;
+    width: 80px;
+    border: solid 5px white;
+    border-radius: 80px;
+    // margin-left: auto; margin-right: auto;
+    margin-top: -10px;
+    margin: 1px;
+}
+.imgc{
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+}
+.c2{
+    height: 26px;
+    width: 97px;
+    border:  1px red;
+    float: left;
+    margin-top: -12px;
+}
+.cp{
+    font-size: 22px;
+    // font-weight: bold;
+    text-align: start;
+    margin-top: -8px;
+    margin-left: 1px;
+}
+.size{
+    height: 45px;
+    width: 60px;
+    border:  1px;
+}
+.sizetext{
+    font-size: 27px;
+    font-weight: bold;
+    margin-top: -1px;
+}
+.clothes{
+    height: 40px;
+    width: 95px;
+    border: solid 1px blue;
+    border-radius: 5px;
+    margin-top: auto;
+    margin-left: 15px;
+    background-color: lightblue;
+}
+.clothestext{
+    font-size: 22px;
+    margin-top: auto;
+    text-align: center;
+}
+.shoes{
+    height: 40px;
+    width: 95px;
+    border:  1px;
+    border-radius: 5px;
+    background-color: lightpink;
+}
+.shoestext{
+    font-size: 22px;
+    margin-top: 1px;
+    text-align: center;
+}
+@media screen and (min-width:768px) {
+    .shoes{
+        margin-top: auto;
+    margin-left: 15px;
+    }
+}
+.sizediv{
+    height: 35px;
+    width: 91%;
+    border:  1px;
+    border-radius: 40px;
+    background-color: rgba(135, 207, 235, 0.281);
+}
+@media screen and (min-width:768px) {
+    .sizediv{
+    width: 94%;
+    }
+}
+.sizestext{
+    margin-top: -8px;
+    color: blue;
+    transition: all 0.3s ease;
+}
+.sizestext:hover{
+    transform: scale(1.1);
+}
+.color{
+    height: 45px;
+    width: 77px;
+    border:  1px;
+}
+.colortext{
+    font-size: 27px;
+    font-weight: bold;
+    margin-top: 1px;
+}
+.clr1{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: solid 5px white;
+    background-color: lightgray;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.clr1:hover{
+    transform: scale(1.1);
+}
+.clr2{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: solid 5px white;
+    background-color: black;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.clr2:hover{
+    transform: scale(1.1);
+}
+.clr3{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: solid 5px white;
+    background-color: blue;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.clr3:hover{
+    transform: scale(1.1);
+}
+.clr4{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: solid 5px white;
+    background-color: red;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.clr4:hover{
+    transform: scale(1.1);
+}
+.clr5{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: solid 5px white;
+    background-color: orange;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.clr5:hover{
+    transform: scale(1.1);
+}
+.clr6{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: solid 5px white;
+    background-color: purple;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.clr6:hover{
+    transform: scale(1.1);
+}
+.clr7{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: solid 5px white;
+    background-color: brown;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.clr7:hover{
+    transform: scale(1.1);
+}
+.clr8{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: solid 5px white;
+    background-color: yellow;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.clr8:hover{
+    transform: scale(1.1);
+}
+.clr9{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: solid 5px white;
+    background-color: green;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.clr9:hover{
+    transform: scale(1.1);
+}
+.clr10{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: solid 5px white;
+    background-color: lightpink;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.clr10:hover{
+    transform: scale(1.1);
+}
+
+.range{
+    width: 91%;
+}
+@media screen and (min-width:768px) {
+    .range{
+    width: 94%;
+    }
+}
+
+.popular{
+    height: 35px;
+    width: 100%;
+    border:  1px;
+    border-radius: 40px;
+    background-color: rgba(173, 216, 230, 0.459);
+}
+.popularlist{
+    height: 34px;
+    width: 73%;
+    border:   1px;
+    float: left;
+    margin: auto;
+    margin-top: -8px;
+    background-color: transparent;
+
+}
+.populartext{
+    margin-top: 1px;
+    text-align: center;
+    font-weight: bold;
+}
+.checkboxlist{
+    float: right;
+    margin: 2px;
+    margin-top: -8px;
+    height: 33px;
+    width: 33px;
+    border-radius: 35px;
+    border:   1px;
+    background-color: lightblue;
+}
+@media screen and (min-width:768px) {
+    .checkboxlist{
+        margin: 2px;
+    margin-top: -8px;
+    }
+    .popularlist{
+        width: 91%;
+    }
+}
+.checkbox{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ion-checkbox {
+    --size: 32px;
+    --checkbox-background-checked: #6815ec;
+  }
+  
+  ion-checkbox::part(container) {
+    border-radius: 35px;
+    border: 3px solid white;
+  }
+
+
+.button{
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+
+
+  @media screen and (min-width:768px) {
+    ion-modal#example-modal {
+      --width: 70%;
+      --height: 80%;
+      --border-radius: 6px;
+      --box-shadow: 0 28px 48px rgba(0, 0, 0, 0.4);
+    } 
+  }

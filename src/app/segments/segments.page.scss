@@ -1,0 +1,28 @@
+
+
+
+
+.ion-badge{
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    padding-top: 6px;
+    position: absolute;
+    top: 35%;
+    left: 56%;
+    transform: translate(-44%, -65%)
+    
+  }
+  @media screen and (max-width:767px) {
+    .ion-badge{
+      height: 25px;
+      width: 25px;
+      border-radius: 25px;
+      padding-top: 6px;
+      position: absolute;
+      top: 35%;
+      left: 64%;
+      transform: translate(-36%, -65%) 
+    }
+    
+  }

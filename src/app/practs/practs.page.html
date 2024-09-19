@@ -1,0 +1,66 @@
+
+<ion-content [fullscreen]="true">
+
+  <!-- Alert is here -->
+  <ion-button id="present-alert">Click Me</ion-button>
+<ion-alert
+  trigger="present-alert"
+  header="A Short Title Is Best"
+  subHeader="A Sub Header Is Optional"
+  message="A message should be a short, complete sentence."
+  [buttons]="alertButtons"
+></ion-alert>
+
+
+<ion-button (click)="setOpen(true)" fill="outline" color="success">Click Me</ion-button>
+<ion-alert
+  [isOpen]="isAlertOpen"
+  header="A Short Title Is Best"
+  subHeader="A Sub Header Is Optional"
+  message="A message should be a short, complete sentence."
+  [buttons]="alertButtons"
+  (didDismiss)="setOpen(false)"
+></ion-alert>
+
+
+<ion-button (click)="presentAlert()" shape="round" color="danger">Click Me</ion-button>
+
+
+<ion-button id="present-alert" color="dark">Click Me</ion-button>
+<ion-alert
+  trigger="present-alert"
+  header="Alert!"
+  [buttons]="alertButtons"
+  (didDismiss)="setResult($event)"
+></ion-alert>
+
+
+<ion-button id="present-alert" color="warning">Click Me</ion-button>
+<ion-alert
+  trigger="present-alert"
+  header="Please enter your info"
+  [buttons]="alertButtons"
+  [inputs]="alertInputs"
+></ion-alert>
+
+
+<ion-button id="present-alert" color="secondary">Click Me</ion-button>
+<ion-alert
+  trigger="present-alert"
+  header="Select your favorite color"
+  [buttons]="alertButtons"
+  [inputs]="alertInputs"
+></ion-alert>
+
+
+
+
+
+
+
+
+
+
+
+
+</ion-content>

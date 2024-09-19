@@ -1,0 +1,596 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet">
+<!-- content starts here -->
+
+<ion-content [fullscreen]="true">
+  <ion-grid class="main">
+    <ion-row class="ion-margin-top ion-margin ">
+      <ion-col size-md="2" size="3">
+        <ion-list class="a">
+          <p class="a1">{{figmap7arry.text1}} </p>
+        </ion-list>
+      </ion-col>
+      <ion-col size-md="9" size="9">
+        <ion-list class="b">
+          <ion-list class="b1">
+            <!-- <p class="bb1">{{figmap7arry.text2}} </p> -->
+            <input class="bb1" type="search" placeholder="Search">
+          </ion-list>
+          <ion-list class="b2"><ion-icon class="bb2" color="primary" name="{{figmap7arry.icon1}}" (click)="presentActionSheet()"></ion-icon></ion-list>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
+    <swiper-container class="ion-margin-top ion-margin" [breakpoints]="{
+      '360':{
+        'slidesPerView':4,
+        'spaceBetween':5,
+      },
+      '760':{
+        'slidesPerView':5,
+        'spaceBetween':10,
+      },
+      '1221':{
+        'slidesPerView':8,
+        'spaceBetween':20,
+      },
+    }" *ngFor="let item of figmap7data">
+    <swiper-slide>
+      <ion-list class="c">
+        <ion-card class="c1">
+          <div *ngIf="imageUrl">
+        <img [src]="imageUrl" alt="Selected Image" style="width: 80px; height: 80px; border-radius: 80px; "/>
+          </div>
+          <!-- <img class="imgc" src="{{item.img1}}" alt=""> -->
+        </ion-card>
+        <ion-list class="c2"><p class="cp">{{item.text3}} </p></ion-list>
+      </ion-list>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-list class="c">
+        <ion-card class="c1">
+          <img class="imgc" src="{{item.img2}}" alt="">
+        </ion-card>
+        <ion-list class="c2"><p class="cp">{{item.text4}} </p></ion-list>
+      </ion-list>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-list class="c">
+        <ion-card class="c1">
+          <img class="imgc" src="{{item.img3}}" alt="">
+        </ion-card>
+        <ion-list class="c2"><p class="cp">{{item.text5}} </p></ion-list>
+      </ion-list>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-list class="c">
+        <ion-card class="c1">
+          <img class="imgc" src="{{item.img4}}" alt="">
+        </ion-card>
+        <ion-list class="c2"><p class="cp">{{item.text6}} </p></ion-list>
+      </ion-list>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-list class="c">
+        <ion-card class="c1">
+          <img class="imgc" src="{{item.img5}}" alt="">
+        </ion-card>
+        <ion-list class="c2"><p class="cp">{{item.text7}} </p></ion-list>
+      </ion-list>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-list class="c">
+        <ion-card class="c1">
+          <img class="imgc" src="{{item.img6}}" alt="">
+        </ion-card>
+        <ion-list class="c2"><p class="cp">{{item.text8}} </p></ion-list>
+      </ion-list>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-list class="c">
+        <ion-card class="c1">
+          <img class="imgc" src="{{item.img7}}" alt="">
+        </ion-card>
+        <ion-list class="c2"><p class="cp">{{item.text9}} </p></ion-list>
+      </ion-list>
+    </swiper-slide>
+    <swiper-slide>
+      <ion-list class="c">
+        <ion-card class="c1">
+          <img class="imgc" src="{{item.img8}}" alt="">
+        </ion-card>
+        <ion-list class="c2"><p class="cp">{{item.text10}} </p></ion-list>
+      </ion-list>
+    </swiper-slide>
+</swiper-container>
+
+<!-- <swiper-container class="ion-margin-top ion-margin" [breakpoints]="{
+  '360':{
+    'slidesPerView':4,
+    'spaceBetween':10,
+  },
+  '760':{
+    'slidesPerView':5,
+    'spaceBetween':10,
+  },
+  '1221':{
+    'slidesPerView':8,
+    'spaceBetween':20,
+  },
+}">
+<swiper-slide>
+  <ion-list class="c">
+    <ion-card class="c1">
+      <img class="imgc" src="{{arry2.img9}}" alt="">
+    </ion-card>
+    <ion-list class="c2"><p class="cp">{{arry2.text11}} </p></ion-list>
+  </ion-list>
+</swiper-slide>
+<swiper-slide>
+  <ion-list class="c">
+    <ion-card class="c1">
+      <img class="imgc" src="{{arry2.img10}}" alt="">
+    </ion-card>
+    <ion-list class="c2"><p class="cp">{{arry2.text12}} </p></ion-list>
+  </ion-list>
+</swiper-slide>
+<swiper-slide>
+  <ion-list class="c">
+    <ion-card class="c1">
+      <img class="imgc" src="{{arry2.img11}}" alt="">
+    </ion-card>
+    <ion-list class="c2"><p class="cp">{{arry2.text13}} </p></ion-list>
+  </ion-list>
+</swiper-slide>
+<swiper-slide>
+  <ion-list class="c">
+    <ion-card class="c1">
+      <img class="imgc" src="{{arry2.img12}}" alt="">
+    </ion-card>
+    <ion-list class="c2"><p class="cp">{{arry2.text14}} </p></ion-list>
+  </ion-list>
+</swiper-slide>
+<swiper-slide>
+  <ion-list class="c">
+    <ion-card class="c1">
+      <img class="imgc" src="{{arry2.img13}}" alt="">
+    </ion-card>
+    <ion-list class="c2"><p class="cp">{{arry2.text15}} </p></ion-list>
+  </ion-list>
+</swiper-slide>
+<swiper-slide>
+  <ion-list class="c">
+    <ion-card class="c1">
+      <img class="imgc" src="{{arry2.img14}}" alt="">
+    </ion-card>
+    <ion-list class="c2"><p class="cp">{{arry2.text16}} </p></ion-list>
+  </ion-list>
+</swiper-slide>
+<swiper-slide>
+  <ion-list class="c">
+    <ion-card class="c1">
+      <img class="imgc" src="{{arry2.img15}}" alt="">
+    </ion-card>
+    <ion-list class="c2"><p class="cp">{{arry2.text17}} </p></ion-list>
+  </ion-list>
+</swiper-slide>
+<swiper-slide>
+  <ion-list class="c">
+    <ion-card class="c1">
+      <img class="imgc" src="{{arry2.img16}}" alt="">
+    </ion-card>
+    <ion-list class="c2"><p class="cp">{{arry2.text18}} </p></ion-list>
+  </ion-list>
+</swiper-slide>
+</swiper-container> -->
+
+
+<ion-row class="ion-margin-top ion-margin">
+  <ion-col size-md="4" size="5">
+    <ion-list class="d"><p class="dp">{{figmap7arry3.text37}} </p></ion-list>
+  </ion-col>
+  <ion-col size-md="7" size="5"></ion-col>
+  <ion-col size-md="1" size="2">
+    <ion-list class="d1"><ion-icon id="open-custom-dialog" class="di" name="{{figmap7arry3.icon2}}"></ion-icon></ion-list>
+    <!-- Modal Modal -->
+    <ion-modal id="example-modal" #modal trigger="open-custom-dialog">
+      <ng-template>
+        <ion-content>
+          <ion-grid>
+            <ion-row class="ion-margin-top ion-margin">
+              <ion-col size="8" class="ion-text-start">
+                <ion-list class="filter">
+                  <p class="filtertext">{{figmap7arrym4.filter}} </p>
+                </ion-list>
+              </ion-col>
+              <ion-col size="4"  class="ion-text-end">
+                <ion-icon  (click)="closeModal()" [strong]="true" name="{{figmap7arrym4.close}}" size="large"></ion-icon>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+  
+          <swiper-container class="ion-margin-top ion-margin swp" [breakpoints]="{
+            '360':{
+              'slidesPerView':4,
+              'spaceBetween':5,
+            },
+            '760':{
+              'slidesPerView':5,
+              'spaceBetween':10,
+            },
+            '1221':{
+              'slidesPerView':8,
+              'spaceBetween':20,
+            },
+          }" *ngFor="let item2 of figmap7data2">
+          <swiper-slide>
+            <ion-list class="n">
+              <ion-card class="n1">
+                <img class="imgn" src="{{item2.imga}}" alt="">
+              </ion-card>
+              <ion-list class="n2"><p class="np">{{item2.texta}} </p></ion-list>
+            </ion-list>
+          </swiper-slide>
+          <swiper-slide>
+            <ion-list class="n">
+              <ion-card class="n1">
+                <img class="imgn" src="{{item2.imgb}}" alt="">
+              </ion-card>
+              <ion-list class="n2"><p class="np">{{item2.textb}} </p></ion-list>
+            </ion-list>
+          </swiper-slide>
+          <swiper-slide>
+            <ion-list class="n">
+              <ion-card class="n1">
+                <img class="imgn" src="{{item2.imgc}}" alt="">
+              </ion-card>
+              <ion-list class="n2"><p class="np">{{item2.textc}} </p></ion-list>
+            </ion-list>
+          </swiper-slide>
+          <swiper-slide>
+            <ion-list class="n">
+              <ion-card class="n1">
+                <img class="imgn" src="{{item2.imgd}}" alt="">
+              </ion-card>
+              <ion-list class="n2"><p class="np">{{item2.textd}} </p></ion-list>
+            </ion-list>
+          </swiper-slide>
+          <swiper-slide>
+            <ion-list class="n">
+              <ion-card class="n1">
+                <img class="imgn" src="{{item2.imge}}" alt="">
+              </ion-card>
+              <ion-list class="n2"><p class="np">{{item2.texte}} </p></ion-list>
+            </ion-list>
+          </swiper-slide>
+          <swiper-slide>
+            <ion-list class="n">
+              <ion-card class="n1">
+                <img class="imgn" src="{{item2.imgf}}" alt="">
+              </ion-card>
+              <ion-list class="n2"><p class="np">{{item2.textf}} </p></ion-list>
+            </ion-list>
+          </swiper-slide>
+          <swiper-slide>
+            <ion-list class="n">
+              <ion-card class="n1">
+                <img class="imgn" src="{{item2.imgg}}" alt="">
+              </ion-card>
+              <ion-list class="n2"><p class="np">{{item2.textg}} </p></ion-list>
+            </ion-list>
+          </swiper-slide>
+          <swiper-slide>
+            <ion-list class="n">
+              <ion-card class="n1">
+                <img class="imgn" src="{{item2.imgh}}" alt="">
+              </ion-card>
+              <ion-list class="n2"><p class="np">{{item2.texth}} </p></ion-list>
+            </ion-list>
+          </swiper-slide>
+      </swiper-container>
+  
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2" size-md="1">
+        <ion-list class="size">
+          <p class="sizetext">{{figmap7arry4.size}} </p>
+        </ion-list>
+      </ion-col>
+      <ion-col size="2" size-md="7"></ion-col>
+      <ion-col size="4" size-md="2">
+        <ion-list class="clothes">
+          <p class="clothestext">{{figmap7arry4.clothes}} </p>
+        </ion-list>
+      </ion-col>
+      <ion-col size="4" size-md="2">
+        <ion-list class="shoes">
+          <p class="shoestext">{{figmap7arry4.Shoes}} </p>
+        </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  <ion-list class="ion-margin-top ion-margin sizediv">
+    <ion-grid>
+      <ion-row>
+        <ion-col class="ion-text-center">
+          <p class="sizestext">{{figmap7arry5.xs}} </p>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <p class="sizestext">{{figmap7arry5.s}} </p>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <p class="sizestext">{{figmap7arry5.m}} </p>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <p class="sizestext">{{figmap7arry5.l}} </p>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <p class="sizestext">{{figmap7arry5.xl}} </p>
+        </ion-col>
+        <ion-col class="ion-text-center">
+          <p class="sizestext">{{figmap7arry5.xxl}} </p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+  
+  
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col size="3" size-md="2">
+        <ion-list class="color">
+          <p class="colortext">{{figmap7arry6m.color}} </p>
+        </ion-list>
+      </ion-col>
+      <ion-col size="9" size-md="10"></ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  
+  <swiper-container class="ion-margin-top ion-margin swp" [breakpoints]="{
+    '360':{
+      'slidesPerView':5,
+      'spaceBetween':10,
+    },
+    '760':{
+      'slidesPerView':5,
+      'spaceBetween':10,
+    },
+    '1221':{
+      'slidesPerView':10,
+      'spaceBetween':25,
+    },
+  }">
+  <swiper-slide>
+    <ion-list class="clr1"></ion-list>
+  </swiper-slide>
+  <swiper-slide>
+    <ion-list class="clr2"></ion-list>
+  </swiper-slide>
+  <swiper-slide>
+    <ion-list class="clr3"></ion-list>
+  </swiper-slide>
+  <swiper-slide>
+    <ion-list class="clr4"></ion-list>
+  </swiper-slide>
+  <swiper-slide>
+    <ion-list class="clr5"></ion-list>
+  </swiper-slide>
+  <swiper-slide>
+    <ion-list class="clr6"></ion-list>
+  </swiper-slide>
+  <swiper-slide>
+    <ion-list class="clr7"></ion-list>
+  </swiper-slide>
+  <swiper-slide>
+    <ion-list class="clr8"></ion-list>
+  </swiper-slide>
+  <swiper-slide>
+    <ion-list class="clr9"></ion-list>
+  </swiper-slide>
+  <swiper-slide>
+    <ion-list class="clr10"></ion-list>
+  </swiper-slide>
+  </swiper-container>
+  
+  
+  
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2" size-md="1">
+        <ion-list class="color">
+          <p class="colortext">{{figmap7arry6.price}} </p>
+        </ion-list>
+      </ion-col>
+      <ion-col size="6" size-md="9">
+      </ion-col>
+      <ion-col size="4" size-md="2" class="ion-text-center">
+        <p>{{figmap7arry6.$10}} </p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  
+  <ion-range aria-label="{{figmap7arry7m.range}}" [dualKnobs]="true" [value]="{ lower: 20, upper: 80 }"     class="ion-margin range"></ion-range>
+  
+  
+  <ion-grid>
+    <ion-row class="ion-margin-top ion-margin">
+      <ion-col size="6">
+        <ion-list class="popular">
+      <ion-list class="popularlist">
+  <p class="populartext">{{figmap7arry7.popular}} </p>
+  </ion-list>
+  <ion-list class="checkboxlist">
+  <ion-checkbox class="checkbox"></ion-checkbox>
+  </ion-list>
+        </ion-list>
+      </ion-col>
+      <ion-col size="6">
+        <ion-list class="popular">
+  <p class="populartext">{{figmap7arry7.newest}} </p>
+        </ion-list>
+      </ion-col>
+      <ion-col size="6">
+        <ion-list class="popular">
+          <p class="populartext">{{figmap7arry7.high}} </p>
+                </ion-list>
+      </ion-col>
+      <ion-col size="6">
+        <ion-list class="popular">
+          <p class="populartext">{{figmap7arry7.low}} </p>
+                </ion-list>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  
+  
+  <ion-grid>
+    <ion-row class="ion-margin-top ion-margin">
+      <ion-col size="4">
+        <ion-button fill="outline" color="primary">{{figmap7arry8.clear}} </ion-button>
+      </ion-col>
+      <ion-col size="8" class="ion-text-end">
+  <ion-button class="button">{{figmap7arry8.apply}} </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+  </ion-col>
+</ion-row>
+
+
+
+<ion-row class="ion-margin-top ion-margin">
+  <ion-col size-md="2" size="6" *ngFor="let item1 of figmap7data1">
+    <ion-list class="k">
+      <ion-card class="kcard" (click)="onImageClick(item1)">
+        <img class="imgk" src="{{item1.img17}}" alt="">
+      </ion-card>
+      <ion-list class="k1">
+        <p class="kp1">{{item1.text19}} </p>
+      </ion-list>
+      <ion-list class="k2">
+        <p class="kp2">{{item1.text20}} <span class="kp3">{{item1.text21}} </span></p>
+      </ion-list>
+    </ion-list>
+  </ion-col>
+  <!-- <ion-col size-md="2" size="6">
+    <ion-list class="k">
+      <ion-card class="kcard">
+        <img class="imgk" src="{{arry6.img18}}" alt="">
+      </ion-card>
+      <ion-list class="k1">
+        <p class="kp1">{{arry6.text22}} </p>
+      </ion-list>
+      <ion-list class="k2">
+        <p class="kp2">{{arry6.text23}} <span class="kp3">{{arry6.text24}}</span></p>
+      </ion-list>
+    </ion-list>
+  </ion-col>
+  <ion-col size-md="2" size="6">
+    <ion-list class="k">
+      <ion-card class="kcard">
+        <img class="imgk" src="{{arry7.img19}}" alt="">
+      </ion-card>
+      <ion-list class="k1">
+        <p class="kp1">{{arry7.text25}} </p>
+      </ion-list>
+      <ion-list class="k2">
+        <p class="kp2">{{arry7.text26}} <span class="kp3">{{arry7.text27}}</span></p>
+      </ion-list>
+    </ion-list>
+  </ion-col>
+  <ion-col size-md="2" size="6">
+    <ion-list class="k">
+      <ion-card class="kcard">
+        <img class="imgk" src="{{arry8.img20}}" alt="">
+      </ion-card>
+      <ion-list class="k1">
+        <p class="kp1">{{arry8.text28}}</p>
+      </ion-list>
+      <ion-list class="k2">
+        <p class="kp2">{{arry8.text29}} <span class="kp3">{{arry8.text30}}</span></p>
+      </ion-list>
+    </ion-list>
+  </ion-col>
+  <ion-col size-md="2" size="6">
+    <ion-list class="k">
+      <ion-card class="kcard">
+        <img class="imgk" src="{{arry9.img21}}" alt="">
+      </ion-card>
+      <ion-list class="k1">
+        <p class="kp1">{{arry9.text31}} </p>
+      </ion-list>
+      <ion-list class="k2">
+        <p class="kp2">{{arry9.text32}} <span class="kp3">{{arry9.text33}}</span></p>
+      </ion-list>
+    </ion-list>
+  </ion-col>
+  <ion-col size-md="2" size="6">
+    <ion-list class="k">
+      <ion-card class="kcard">
+        <img class="imgk" src="{{arry10.img22}}" alt="">
+      </ion-card>
+      <ion-list class="k1">
+        <p class="kp1">{{arry10.text34}}</p>
+      </ion-list>
+      <ion-list class="k2">
+        <p class="kp2">{{arry10.text35}} <span class="kp3">{{arry10.text36}}</span></p>
+      </ion-list>
+    </ion-list>
+  </ion-col> -->
+</ion-row>
+
+
+
+
+
+
+
+
+
+<ion-row>
+  <ion-col class="y" size-md="12" size="12">1</ion-col>
+</ion-row>
+
+    </ion-grid>
+
+</ion-content>
+
+
+<!-- footer -->
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="home-outline" size="large" color="primary" (click)="home()"></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="heart-outline" size="large" color="primary" ></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="document-text-outline" size="large" color="primary" color="dark"></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="bag-handle-outline" size="large" color="primary" (click)="cart()"></ion-icon>
+        <ion-badge shape="round" class="ion-badge">{{figmap7arr.cart}} </ion-badge>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="person-outline" size="large" color="primary" (click)="setting()"></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

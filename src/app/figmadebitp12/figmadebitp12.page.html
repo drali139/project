@@ -1,0 +1,141 @@
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet">
+<link
+  href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+  rel="stylesheet">
+<!-- content starts here -->
+
+<ion-content [fullscreen]="true">
+  <ion-grid class="main">
+    <ion-list class="a">
+      <p class="ap">{{debitarry.text1}} <br><span class="ap1">{{debitarry.text2}} </span></p>
+    </ion-list>
+
+<!-- Debit Card -->
+ <ion-list class="b">
+<ion-row>
+  <ion-col size="4">
+    <ion-list class="bb">
+    <ion-list class="b1"></ion-list>
+    <ion-list class="b2"></ion-list>
+    </ion-list>
+  </ion-col>
+  <ion-col size="6"></ion-col>
+  <ion-col size="2">
+    <ion-list class="b3"><ion-icon  class="bi" color="primary" name="{{debitarry1.icon1}}"></ion-icon></ion-list>
+  </ion-col>
+</ion-row>
+
+<ion-row>
+  <ion-col class="ion-text-center"><p class="c">{{debitarry1.text3}} </p></ion-col>
+  <ion-col class="ion-text-center"><p class="c">{{debitarry1.text4}}</p></ion-col>
+  <ion-col class="ion-text-center"><p class="c">{{debitarry1.text5}}</p></ion-col>
+  <ion-col class="ion-text-center"><p>{{debitarry1.text6}} </p></ion-col>
+</ion-row>
+
+<ion-row class="aa">
+  <ion-col size="8"><ion-list class="d"><p class="dp">{{debitarry1.text7}} </p></ion-list></ion-col>
+  <ion-col size="1"></ion-col>
+  <ion-col size="3"><ion-list class="d1"><p class="dp1">{{debitarry1.text8}} </p></ion-list></ion-col>
+</ion-row>
+ </ion-list>
+
+ 
+<ion-card class="h" id="open-modal"><ion-icon color="light" class="hi" name="{{debitarry2.icon2}}"></ion-icon>
+<!-- ion-modal -->
+<ion-modal trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+  <ng-template>
+    <div class="block modal-content">
+<ion-grid>
+<ion-row class="ion-margin-top ion-margin">
+<ion-col size="8">
+  <ion-list class="shiplist">
+  <p class="shipadd">{{debitarry3.shippingaddress}} </p>
+</ion-list>
+</ion-col>
+<ion-col size="4"></ion-col>
+</ion-row>
+</ion-grid>
+
+<ion-grid>
+<ion-row class="rowcl">
+<ion-col size="12">
+  <ion-list class="mainlist">
+  <ion-list class="countrylist">
+    <ion-item>
+      <ion-input  [(ngModel)]="cardData.name" labelPlacement="floating" placeholder="Enter Your Name">
+        <div slot="label">Name</div>
+      </ion-input>
+    </ion-item>
+  </ion-list>
+</ion-list>
+</ion-col>
+<ion-col size="12">
+  <ion-list class="addresslist">
+    <ion-item>
+      <ion-input [(ngModel)]="cardData.cardNumber" labelPlacement="floating" placeholder="*** *** *** 6416">
+        <div slot="label">Debit Card No.</div>
+      </ion-input>
+    </ion-item>
+  </ion-list>
+</ion-col>
+<ion-col size="12">
+  <ion-list class="addresslist">
+    <ion-item>
+      <ion-input [(ngModel)]="cardData.expiryDate" labelPlacement="floating" type="month" placeholder="Lahore">
+        <div slot="label">Expiry Date</div>
+      </ion-input>
+    </ion-item>
+  </ion-list>
+</ion-col>
+</ion-row>
+</ion-grid>
+
+<ion-grid>
+<ion-row>
+<ion-col size="12" class="ion-text-center">
+<ion-button class="btn" (click)="saveChanges()">{{debitarry4.savechanges}} </ion-button>
+</ion-col>
+</ion-row>
+</ion-grid>
+    </div>
+  </ng-template>
+</ion-modal>
+</ion-card>
+<ion-button fill="outline" color="success" class="btn" (click)="proceedToPayment()">Payment</ion-button>
+
+
+
+
+
+
+
+
+
+  </ion-grid>
+</ion-content>
+<!-- footer -->
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="home-outline" size="large" color="primary" (click)="home()"></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="heart-outline" size="large" color="primary" ></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="document-text-outline" size="large" color="primary" (click)="figmap7()"></ion-icon>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="bag-handle-outline" size="large" color="primary" (click)="cart()"></ion-icon>
+        <ion-badge shape="round" class="ion-badge">{{figmap12arr.cart}} </ion-badge>
+      </ion-col>
+      <ion-col class="ion-text-center p">
+        <ion-icon name="person-outline" size="large" color="dark" ></ion-icon>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>

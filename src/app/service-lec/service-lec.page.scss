@@ -1,0 +1,107 @@
+.e1{
+    height: 100px;
+    width: 250px;
+    border:  1px;
+}
+.ea{
+    height: 70px;
+    width: 70px;
+    border:  1px;
+    border-radius: 100px;
+    float: left;
+    margin: 1px;
+    margin-top: 15px;
+}
+.eb{
+    height: 70px;
+    width: 100px;
+    border:  1px;
+    float: left;
+    margin: 1px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background-color: rgba(173, 216, 230, 0.678);
+}
+.ebp{
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5px;
+}
+.e2{
+    height: 75px;
+    width: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+@media screen {
+    .circle {
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+        top: 13px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        border: solid 10px white;
+      }
+      
+      .circleimg {
+        margin-top: -8px;
+      }
+      
+      .header,
+      .subheader,
+      .message {
+        text-align: center;
+        line-height: 0.6;
+      }
+      
+      .header {
+        padding-top: 45px;
+      }
+      
+      .custom-alert .alert-button-group {
+        justify-content: center;
+      }
+      
+      .custom-alert .alert-content {
+        text-align: center;
+      }
+      
+      .alert-wrapper.sc-ion-alert-md {
+        box-shadow: none;
+        background: transparent;
+      }
+      
+      .alert-head.sc-ion-alert-md + .alert-message.sc-ion-alert-md {
+        background: white;
+        border-radius: 20px 20px 0 0;
+        text-align: center;
+      }
+      
+      .alert-button-group.sc-ion-alert-md {
+        background: white;
+        border-radius: 0 0 20px 20px;
+        text-align: center;
+      }
+      
+      .alert-button.sc-ion-alert-md {
+        margin: auto;
+        background-color: #1c1a1aed;
+        color: #e7dcdc;
+        font-weight: 500;
+        text-transform: uppercase;
+        // border: solid 1px;
+        // width: 150px;
+        // height: 43px;
+        border-radius: 10px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+      }
+}

@@ -1,0 +1,57 @@
+.styling {
+    --height: 38%;
+    --border-radius: 16px;
+    --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+  
+  ion-modal::part(backdrop) {
+    background: rgba(209, 213, 219);
+    opacity: 1;
+  }
+  
+  .styling, .styling1 {
+    --background: lightpink;
+    --color: white;
+  }
+  @media screen and (min-width:768px) {
+    .styling {
+      --height: 50%;
+      --border-radius: 16px;
+      --box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    }
+    
+    ion-modal::part(backdrop) {
+      --background: rgba(209, 213, 219);
+      opacity: 1;
+    }
+    
+    .styling, .styling1 {
+      --background: lightpink;
+      --color: white;
+    }
+  }
+  .dresslist{
+    width: 95%;
+    margin-top: -15px;
+    
+}
+input:focus{
+  border: 2px solid red;
+  outline: none;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+}
+.btn1{
+    align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 35px;
+}
+
+
+@media screen and (min-width:768px) {
+  .btn1{
+    margin-top: 22px;
+  }
+  
+}

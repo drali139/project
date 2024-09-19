@@ -1,0 +1,29 @@
+.card{
+    height: 60px;
+    width: 60px;
+    margin: auto;
+    border-radius: 50px;
+    text-align: center;
+}
+.img{
+    height: 50px;
+    width: 50px;
+    border-radius:50px;
+    margin-top: 5px;
+}
+.text{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.img2{
+    height: 300px;
+    width: 100%;
+}
+@media screen and (min-width:432px) {
+    .img2{
+      height: 400px;
+      width: 70%;
+      margin: auto;
+    }
+}

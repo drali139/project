@@ -1,0 +1,344 @@
+/*
+ * App Global CSS
+ * ----------------------------------------------------------------------------
+ * Put style rules here that you want to apply globally. These styles are for
+ * the entire app and not just one component. Additionally, this file can be
+ * used as an entry point to import other CSS/Sass files to be included in the
+ * output CSS.
+ * For more information on global stylesheets, visit the documentation:
+ * https://ionicframework.com/docs/layout/global-stylesheets
+ */
+
+/* Core CSS required for Ionic components to work properly */
+@import "@ionic/angular/css/core.css";
+
+/* Basic CSS for apps built with Ionic */
+@import "@ionic/angular/css/normalize.css";
+@import "@ionic/angular/css/structure.css";
+@import "@ionic/angular/css/typography.css";
+@import "@ionic/angular/css/display.css";
+
+/* Optional CSS utils that can be commented out */
+@import "@ionic/angular/css/padding.css";
+@import "@ionic/angular/css/float-elements.css";
+@import "@ionic/angular/css/text-alignment.css";
+@import "@ionic/angular/css/text-transformation.css";
+@import "@ionic/angular/css/flex-utils.css";
+
+/**
+ * Ionic Dark Mode
+ * -----------------------------------------------------
+ * For more info, please see:
+ * https://ionicframework.com/docs/theming/dark-mode
+ */
+
+/* @import "@ionic/angular/css/palettes/dark.always.css"; */
+/* @import "@ionic/angular/css/palettes/dark.class.css"; */
+@import "@ionic/angular/css/palettes/dark.system.css";
+
+// alert-design-css
+@media screen {
+    .circle {
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+        top: 13px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+        border: solid 10px white;
+      }
+      
+      .circleimg {
+        margin-top: -8px;
+      }
+      
+      .header,
+      .subHeader,
+      .message {
+        text-align: center;
+        line-height: 0.6;
+        border:  1px red;
+      }
+      
+      .header {
+        padding-top: 45px;
+      }
+      
+      .custom-alert .alert-button-group {
+        justify-content: center;
+      }
+      
+      .custom-alert .alert-content {
+        text-align: center;
+      }
+      
+      .alert-wrapper.sc-ion-alert-md {
+        box-shadow: none;
+        background: transparent;
+      }
+      
+      .alert-head.sc-ion-alert-md + .alert-message.sc-ion-alert-md {
+        background: white;
+        border-radius: 20px 20px 0 0;
+        text-align: center;
+      }
+      
+      .alert-button-group.sc-ion-alert-md {
+        background: white;
+        border-radius: 0 0 20px 20px;
+        text-align: center;
+      }
+      
+      .alert-button.sc-ion-alert-md {
+        margin: auto;
+        background-color: #1c1a1aed;
+        color: #e7dcdc;
+        font-weight: 500;
+        text-transform: uppercase;
+        // border: solid 1px;
+        // width: 150px;
+        // height: 43px;
+        border-radius: 10px;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+      }
+      @media screen and (max-width:400px) {
+        .circle {
+          height: 55px;
+          width: 55px;
+          border-radius: 50%;
+          top: 1px;
+          left: 50%;
+          transform: translateX(-50%);
+          position: absolute;
+          border: solid 10px white;
+        }
+        
+        .circleimg {
+          margin-top: -8px;
+        }
+        
+        .header,
+        .subHeader,
+        .message {
+          text-align: center;
+          line-height: 0.6;
+          border:  1px red;
+        }
+        
+        .header {
+          padding-top: 45px;
+        }
+        
+        .custom-alert .alert-button-group {
+          justify-content: center;
+        }
+        
+        .custom-alert .alert-content {
+          text-align: center;
+        }
+        
+        .alert-wrapper.sc-ion-alert-md {
+          box-shadow: none;
+          background: transparent;
+        }
+        
+        .alert-head.sc-ion-alert-md + .alert-message.sc-ion-alert-md {
+          background: white;
+          border-radius: 20px 20px 0 0;
+          text-align: center;
+        }
+        
+        .alert-button-group.sc-ion-alert-md {
+          background: white;
+          border-radius: 0 0 20px 20px;
+          text-align: center;
+        }
+        
+        .alert-button.sc-ion-alert-md {
+          margin: auto;
+          background-color: #1c1a1aed;
+          color: #e7dcdc;
+          font-weight: 500;
+          text-transform: uppercase;
+          // border: solid 1px;
+          // width: 150px;
+          // height: 43px;
+          border-radius: 10px;
+          // display: flex;
+          // justify-content: center;
+          // align-items: center;
+        }
+      }
+}
+
+// @media screen {
+//   .alert-wrapper.sc-ion-alert-md {
+//     border-radius: 4px;
+//     -webkit-box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
+//     box-shadow: 0 11px 15px -7px rgba(0, 0, 0, 0.2), 0 24px 38px 3px rgba(0, 0, 0, 0.14), 0 9px 46px 8px rgba(0, 0, 0, 0.12);
+//     border: solid 1px;
+  
+//   }
+//   .alert-wrapper.sc-ion-alert-md {
+//     display: -ms-flexbox;
+//     display: flex;
+//     -ms-flex-direction: column;
+//     flex-direction: column;
+//     width: var(--width);
+//     min-width: var(--min-width);
+//     max-width: var(--max-width);
+//     height: var(--height);
+//     min-height: var(--min-height);
+//     max-height: var(--max-height);
+//     background: var(--background);
+//     contain: content;
+//     opacity: 0;
+//     z-index: 10;
+//     border:  1px;
+//     height: 240px;
+//     border-radius: 20px;
+  
+//   }
+//   .alert-head.sc-ion-alert-md {
+//     -webkit-padding-start: 23px;
+//     padding-inline-start: 23px;
+//     -webkit-padding-end: 23px;
+//     padding-inline-end: 23px;
+//     padding-top: 20px;
+//     padding-bottom: 15px;
+//     text-align: center;
+//     height: 10px;
+//     background-color: rgba(255, 0, 0, 0.767);
+//     border:   1px green;
+//   }
+//   .alert-title.sc-ion-alert-md {
+//     color: var(--ion-text-color, #000);
+//     font-size: 22px;
+//     font-weight: bold;
+//     // line-height: 1.7;
+//   }
+//   .alert-title.sc-ion-alert-md {
+//     margin-left: 0;
+//     margin-right: 0;
+//     margin-top: -15px;
+//     margin-bottom: 0;
+//     padding-left: 0;
+//     padding-right: 0;
+//     padding-top: 0;
+//     padding-bottom: 0;
+//   }
+//   h2 {
+//     margin-top: 18px;
+//     font-size: 1.5rem;
+//   }
+//   .alert-sub-title.sc-ion-alert-md {
+//     color: var(--ion-text-color, #000);
+//     font-size: 22px;
+//   }
+//   .alert-sub-title.sc-ion-alert-md {
+//     margin-left: 0;
+//     margin-right: 0;
+//     margin-top: 5px;
+//     margin-bottom: 0;
+//     padding-left: 0;
+//     padding-right: 0;
+//     padding-top: 0;
+//     padding-bottom: 0;
+//     // font-weight: bold;
+//   }
+//   .alert-head.sc-ion-alert-md+.alert-message.sc-ion-alert-md {
+//     padding-top: 21px;
+//     text-align: center;
+//   }
+//   @media screen and (max-width: 767px) {
+//     .alert-message.sc-ion-alert-md {
+//         max-height: 246px;
+//     }
+//   }
+  
+//   .alert-message.sc-ion-alert-md {
+//     font-size: 19px;
+//     line-height: 1.4;
+//   }
+//   .alert-message.sc-ion-alert-md, .alert-input-group.sc-ion-alert-md {
+//     -webkit-padding-start: 24px;
+//     padding-inline-start: 24px;
+//     -webkit-padding-end: 24px;
+//     padding-inline-end: 24px;
+//     padding-top: 30px;
+//     padding-bottom: 10px;
+//     color: var(--ion-color-step-550, var(--ion-text-color-step-450, #737373));
+//     border:  1px blue;
+//     height: 130px;
+//     background-color: rgba(128, 128, 128, 0.281);
+
+//   }
+//   .alert-button-group.sc-ion-alert-md {
+//     -webkit-padding-start: 8px;
+//     padding-inline-start: 8px;
+//     -webkit-padding-end: 8px;
+//     padding-inline-end: 8px;
+//     padding-top: 8px;
+//     padding-bottom: 8px;
+//     -webkit-box-sizing: border-box;
+//     box-sizing: border-box;
+//     -ms-flex-wrap: wrap-reverse;
+//     flex-wrap: wrap-reverse;
+//     -ms-flex-pack: center;
+//     justify-content: flex-end;
+//   }
+//   .alert-button-group.sc-ion-alert-md {
+//     display: -ms-flexbox;
+//     display: flex;
+//     -ms-flex-direction: row;
+//     flex-direction: row;
+//     width: 100%;
+//     border:  1px orangered;
+//   height: 65px;
+//   margin-top: 15px;
+//   }
+//   .alert-button-inner.sc-ion-alert-md {
+//     -ms-flex-pack: center;
+//     justify-content: center;
+//     border:  1px orangered;
+//     height: 45px;
+//     width: 100px;
+//     border-radius: 15px;
+//     background-color: black;
+//     color: white;
+//     margin-right: 60px;
+//     margin-top: 20px !important; /* Force the margin-top to apply */
+//   }
+  
+//   .sc-ion-alert-md-h {
+//     --background: var(--ion-overlay-background-color, var(--ion-background-color, #fff));
+//     --max-width: 280px;
+//     --backdrop-opacity: var(--ion-backdrop-opacity, 0.32);
+//     font-size: 0.875rem;
+//   }
+//   .sc-ion-alert-md-h {
+//     --min-width: 250px;
+//     --width: auto;
+//     --min-height: auto;
+//     --height: auto;
+//     --max-height: 90%;}
+   
+// }
+
+
+/* global.scss */
+html, body, ion-app, ion-content {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+  
+  

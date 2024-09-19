@@ -1,0 +1,455 @@
+*{
+    font-family: 'raleway','nunito sans';
+    user-select: none;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    border:  1px;
+}
+.back{
+    height: 50px;
+    width: 50px;
+    border:  1px;
+    position: absolute;
+    top: 7%;
+    left: 13%;
+    transform: translate(-87%, -93%);
+}
+.backicon{
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (min-width:768px) {
+    .back{
+        height: 42px;
+        width: 42px;
+        border:  1px;
+        position: absolute;
+        top: 6%;
+        left: 4%;
+        transform: translate(-96%, -94%);
+    }
+    
+}
+.a{
+    height: 300px;
+    width: 320px;
+    border:  1px;
+    position: absolute;
+    top: 23%;
+    left: 58%;
+    transform: translate(-42%, -77%);
+}
+.imga{
+    height: 300px;
+    width: 320px;
+    margin-top: -1px;
+}
+.b{
+    height: 200px;
+    width: 280px;
+    border:  1px;
+    background: transparent;
+    position: absolute;
+    top: 17%;
+    left: 61%;
+    transform: translate(-39%, -83%);
+}
+.imgb{
+    height: 200px;
+    width: 280px;
+    margin-top: -1px;
+}
+.c1{
+    height: 62px;
+    width: 220px;
+    border:  1px;
+    background: transparent;
+    position: absolute;
+    top: 13%;
+    left: 64%;
+    transform: translate(-36%, -87%);
+}
+.cc1{
+    height: 43px;
+    width: 43px;
+    border:  1px;
+    float: right;
+    margin: 2px;
+    margin-top: 7px;
+    border-radius: 10px;
+    background-color: white;
+}
+.cc2{
+    height: 43px;
+    width: 43px;
+    border:  1px;
+    float: right;
+    margin: 7px;
+    margin-top: 7px;
+    border-radius: 10px;
+    background: transparent;
+}
+.cp1{
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 4px;
+}
+.c2{
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.d{
+    height: 70px;
+    width: 220px;
+    border:  1px;
+    background: transparent;
+    position: absolute;
+    top: 15%;
+    left: 38%;
+    transform: translate(-62%, -85%);
+}
+.dp1{
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 1px;
+    line-height: 0.8;
+}
+.dp2{
+    font-size: 20px;
+    font-weight: lighter;
+}
+@media screen and (max-width:400px) {
+    .back{
+        height: 50px;
+        width: 50px;
+        border:  1px;
+        position: absolute;
+        top: 9%;
+        left: 13%;
+        transform: translate(-87%, -91%);
+    }
+    .a{
+        height: 300px;
+        width: 380px;
+        border:  1px;
+        position: absolute;
+        top: 23%;
+        left: 58%;
+        transform: translate(-42%, -77%);
+    }
+    .imga{
+        height: 300px;
+        width: 380px;
+        margin-top: -1px;
+    }
+    .b{
+        height: 200px;
+        width: 340px;
+        border:  1px;
+        background: transparent;
+        position: absolute;
+        top: 17%;
+        left: 61%;
+        transform: translate(-39%, -83%);
+    }
+    .imgb{
+        height: 200px;
+        width: 340px;
+        margin-top: -1px;
+    }
+    .c1{
+        height: 58px;
+        width: 220px;
+        border:  1px;
+        background: transparent;
+        position: absolute;
+        top: 18%;
+        left: 60%;
+        transform: translate(-40%, -82%);
+    }
+    .c2{
+        height: 40px;
+        width: 40px;
+        color: blue;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .d{
+        height: 50px;
+        width: 160px;
+        border:  1px;
+        background: transparent;
+        position: absolute;
+        top: 18%;
+        left: 34%;
+        transform: translate(-66%, -82%);
+    }
+    .dp1{
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 1px;
+        line-height: 0.8;
+    }
+    .dp2{
+        font-size: 14px;
+        font-weight: lighter;
+    }
+}
+.e{
+    height: 35px;
+    width: 88%;
+    border:  1px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+    position: absolute;
+    top: 22%;
+    left: 50%;
+    transform: translate(-50%, -78%);
+}
+@media screen and (max-width:400px) {
+    .e{
+        height: 35px;
+        width: 88%;
+        border:  1px;
+        border-radius: 10px;
+        background-color: whitesmoke;
+        position: absolute;
+        top: 27%;
+        left: 50%;
+        transform: translate(-50%, -73%);
+    }
+}
+.e1{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.ff{
+    margin-top: 220px;
+}
+.f{
+    height: 220px;
+    width: 370px;
+    border:  1px;
+    margin: auto;
+}
+.imgf{
+    height: 220px;
+    width: 370px;
+    margin: auto;
+}
+.g{
+    height: 40px;
+    width: 100%;
+    border:  1px;
+}
+.gp{
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: 1px;
+}
+.g1{
+    height: 50px;
+    width: 50px;
+    border:  1px;
+    transform: rotate(90deg);
+}
+.gi{
+    height: 45px;
+    width: 45px;
+}
+.k{
+    height: 350px;
+    width: 190px;
+    border:  1px;
+}
+.kcard{
+    height: 240px;
+    width: 190px;
+    border: 1px;
+    margin: auto;
+    margin-top: auto;
+}
+.k1{
+    height: 68px;
+    width: 190px;
+    border:  1px;
+}
+.k2{
+    height: 42px;
+    width: 185px;
+    border:  1px;
+    float: left;
+}
+.kp1{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.kp2{
+    font-size: 27px;
+    font-weight: bolder;
+    margin-top: -3px;
+}
+.kp3{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -2px;
+    text-decoration: line-through;
+    color: lightpink;
+}
+.imgk{
+    height: 240px;
+    width: 190px;
+}
+@media screen and (max-width:400px) {
+    .k{
+        height: 330px;
+        width: 165px;
+        border:  1px;
+    }
+    .kcard{
+        height: 220px;
+        width: 165px;
+        border: 1px;
+        margin: auto;
+        margin-top: auto;
+    }
+    .k1{
+        height: 68px;
+        width: 165px;
+        border:  1px;
+    }
+    .kp1{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    .kp2{
+        font-size: 25px;
+        font-weight: bolder;
+        margin-top: -3px;
+    }
+    .imgk{
+        height: 220px;
+        width: 165px;
+    }
+}
+@media screen and (max-width:361px) {
+    .k{
+        height: 300px;
+        width: 150px;
+        border: 1px;
+    }
+    .kcard{
+        height: 210px;
+        width: 150px;
+        border: 1px;
+        margin: auto;
+        margin-top: -5px;
+    }
+    .k1{
+        height: 55px;
+        width: 165px;
+        border: 1px;
+    }
+    .kp1{
+        font-size: 14px;
+        margin-top: 2px;
+    }
+    .kp2{
+        font-size: 23px;
+        font-weight: bolder;
+        margin-top: -5px;
+    }
+    .imgk{
+        height: 220px;
+        width: 165px;
+    }
+    .kp3{
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: -2px;
+        text-decoration: line-through;
+        color: lightpink;
+    }
+}
+.y{
+    color: white;
+}
+.footer-icon {
+    // margin-right: 10px;
+    vertical-align: middle;
+  }
+  .o{
+    height: 60px;
+    width: 92%;
+    background-color: wheat;
+    border-radius: 20px;
+    vertical-align: middle;
+  }
+  .o1{
+    height: 40px;
+    width: 40px;
+  }
+
+@media screen and (min-width: 768px) {
+    .a{
+    position: absolute;
+    top: 24%;
+    left: 85%;
+    transform: translate(-15%, -76%);
+    }
+    .b{
+    position: absolute;
+    top: 20%;
+    left: 88%;
+    transform: translate(-12%, -80%);
+    }
+    .c1{
+    position: absolute;
+    top: 13%;
+    left: 86%;
+    transform: translate(-14%, -87%);
+    }
+    .d{
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    transform: translate(-85%, -85%);
+    }
+}
+.ion-badge{
+    height: 25px;
+    width: 25px;
+    border-radius: 25px;
+    padding-top: 6px;
+    position: absolute;
+    top: 35%;
+    left: 56%;
+    transform: translate(-44%, -65%)  
+  }
+  @media screen and (max-width:767px) {
+    .ion-badge{
+      height: 25px;
+      width: 25px;
+      border-radius: 25px;
+      padding-top: 6px;
+      position: absolute;
+      top: 35%;
+      left: 64%;
+      transform: translate(-36%, -65%) 
+    }
+    
+  }
